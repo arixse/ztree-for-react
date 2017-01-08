@@ -1,0 +1,13 @@
+
+.hello{
+  color: #f00;
+}
+.hello:hover{
+  color: green;
+}
+.text{
+  border: 1px solid red;
+}
+.text:hover{
+  color: red;
+}
