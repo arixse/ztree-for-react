@@ -1,4 +1,4 @@
-# react-for-ztreee
+# react-for-ztree
 
 >对jQuery zTreeV3.x 插件做react封装
 >>
