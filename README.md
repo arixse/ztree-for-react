@@ -3,11 +3,11 @@
 >对jQuery zTreeV3.x 插件做react封装
 >>
 
-# install
+# run example
 ```sh
 npm install
 ```
-# run example
+
 ```sh
 npm start
 ```
