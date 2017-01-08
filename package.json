@@ -1,7 +1,7 @@
 {
-  "name": "react-hot-boilerplate",
-  "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "name": "ztree-for-react",
+  "version": "0.0.1",
+  "description": "对jQuery zTree插件做react封装",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
@@ -9,25 +9,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "url": "https://github.com/arixse/ztree-for-react.git"
   },
   "keywords": [
     "react",
     "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack"
+    "component",
+    "zTree",
+    "tree",
+    "jquery",
+    "react-component",
+    "react-tree",
+    "tree-for-react"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "fus",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+    "url": "https://github.com/arixse/ztree-for-react/issues"
   },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "https://github.com/arixse/ztree-for-react",
   "devDependencies": {
     "babel-core": "^6.0.20",
     "babel-eslint": "^7.1.1",
@@ -39,16 +39,16 @@
     "eslint": "^3.12.2",
     "eslint-plugin-react": "^6.8.0",
     "extract-text-webpack-plugin": "^1.0.1",
-    "jquery": "^2.2.1",
     "react-hot-loader": "^1.3.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1",
-    "ztree": "^3.5.24"
+    "expose-loader": "^0.7.1"
   },
   "dependencies": {
-    "expose-loader": "^0.7.1",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "jquery": "^2.2.1",
+    "ztree": "^3.5.24"
   }
 }
