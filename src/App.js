@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles/layout.css';
-import ReactZtree from './ztree-for-react';
+import ReactZtree from '../lib/ztree-for-react';
 const nodes= [
 	{name: "父节点1",
     id:0,
