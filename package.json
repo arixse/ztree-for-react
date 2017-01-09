@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
-    "build": "webpack --progress --profile --colors"
+    "build": "webpack --progress --profile --colors",
+    "prepublish":"babel src/ztree-for-react.js --out-file lib/ztree-for-react.js"
   },
   "repository": {
     "type": "git",
