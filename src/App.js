@@ -18,18 +18,19 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <ReactZtree nodes={nodes} events={this.getEvents()} check={check}/>
+        <ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree"/>
       </div>
     );
   }
   getEvents(){
     return {
-      'onClick':this.handleClick,
-      'onCheck':this.handleCheck
+      'onClick':(event,treeId,treeNode)=>{this.handleClick(event,treeId,treeNode)},
+      'onCheck':(event,treeId,treeNode)=>{this.handleClick(event,treeId,treeNode)}
     }
   }
   handleClick(event,treeId,treeNode){
     console.log(treeNode);
+    console.log(this.refs.ztree.ztreeObj.getSelectedNodes());
   }
   handleCheck(event,treeId,treeNode){
     console.log(treeNode);

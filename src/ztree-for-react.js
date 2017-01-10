@@ -34,6 +34,9 @@ export default class ReactZtree extends Component{
       view:props.view
     }
   }
+  getTreeObj(){
+    return this.ztreeObj;
+  }
   render(){
     return (
       <div className="ztree" ref="ztree" id="ztree">
