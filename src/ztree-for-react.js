@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import $ from 'expose?$!jquery';
+import $ from 'jquery';
 import 'ztree';
 export default class ReactZtree extends Component{
   constructor(props){
