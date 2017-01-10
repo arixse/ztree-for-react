@@ -11,21 +11,27 @@ const nodes= [
     ]}
 	]}
 ];
-
+const check={
+  enable:true
+}
 export default class App extends Component {
   render() {
     return (
       <div>
-        <ReactZtree nodes={nodes} events={this.getEvents()}/>
+        <ReactZtree nodes={nodes} events={this.getEvents()} check={check}/>
       </div>
     );
   }
   getEvents(){
     return {
-      'onClick':this.handleClick
+      'onClick':this.handleClick,
+      'onCheck':this.handleCheck
     }
   }
   handleClick(event,treeId,treeNode){
+    console.log(treeNode);
+  }
+  handleCheck(event,treeId,treeNode){
     console.log(treeNode);
   }
 }
