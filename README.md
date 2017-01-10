@@ -1,17 +1,13 @@
 # ztree-for-react
+
 [![Build Status](https://travis-ci.org/arixse/ztree-for-react.svg?branch=master)](https://travis-ci.org/arixse/ztree-for-react)
 >对jQuery zTreeV3.x 插件做react封装
 >>
 
-# run example
+# install 
 ```sh
-npm install
+npm install ztree-for-react --save-dev
 ```
-
-```sh
-npm start
-```
-open [http://127.0.0.1:3000](http//127.0.0.1:3000) in you browser
 
 # useage
 ```javascript
@@ -46,6 +42,17 @@ export default class App extends Component {
   }
 }
 ```
+
+# run example
+```sh
+npm install
+```
+
+```sh
+npm start
+```
+open [http://127.0.0.1:3000](http//127.0.0.1:3000) in you browser
+
 # component props
 - **`nodes`** (required, object)
 the zTreee Nodes data
