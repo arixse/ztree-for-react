@@ -1,5 +1,5 @@
 # ztree-for-react
-
+[![Build Status](https://travis-ci.org/arixse/ztree-for-react.svg?branch=master)](https://travis-ci.org/arixse/ztree-for-react)
 >对jQuery zTreeV3.x 插件做react封装
 >>
 
