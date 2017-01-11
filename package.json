@@ -1,6 +1,6 @@
 {
   "name": "ztree-for-react",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "对jQuery zTree插件做react封装",
   "scripts": {
     "start": "node server.js",
