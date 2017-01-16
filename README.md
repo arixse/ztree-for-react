@@ -46,9 +46,7 @@ export default class App extends Component {
 # run example
 ```sh
 npm install
-```
 
-```sh
 npm start
 ```
 open [http://127.0.0.1:3000](http//127.0.0.1:3000) in you browser
