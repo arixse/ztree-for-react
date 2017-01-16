@@ -68,7 +68,8 @@ the zTree data setting
 the zTree eidt setting
 - **`view`** (object)
 the zTree view setting
-go[jQuery Ztree](http://www.treejs.cn/v3/api.php) to get more...
+
+please go [jQuery zTree](http://www.treejs.cn/v3/api.php) to get more infomations!
 
 #LICENSE
 MIT
