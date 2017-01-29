@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import $ from 'jquery';
 import 'ztree';
+let ztreeIndex=0;
 export default class ReactZtree extends Component{
   constructor(props){
     super(props);
@@ -39,7 +40,7 @@ export default class ReactZtree extends Component{
   }
   render(){
     return (
-      <div className="ztree" ref="ztree" id="ztree">
+      <div className="ztree" ref="ztree" id={`ztree_${ztreeIndex++}`}>
 
       </div>
     )

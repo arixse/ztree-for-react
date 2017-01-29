@@ -30,7 +30,7 @@ export default class App extends Component {
   }
   handleClick(event,treeId,treeNode){
     console.log(treeNode);
-    console.log(this.refs.ztree.ztreeObj.getSelectedNodes());
+    console.log(this.refs.ztree.ztreeObj.getCheckedNodes());
   }
   handleCheck(event,treeId,treeNode){
     console.log(treeNode);
