@@ -34,10 +34,15 @@ export default class App extends Component {
   }
   getEvents(){
     return {
-      'onClick':this.handleNodeClick
+      'onClick':(event,treeId,treeNode)=>{this.handleClick(event,treeId,treeNode)},
+      'onCheck':(event,treeId,treeNode)=>{this.handleClick(event,treeId,treeNode)}
     }
   }
-  handleNodeClick(event,treeId,treeNode){
+  handleClick(event,treeId,treeNode){
+    console.log(treeNode);
+    console.log(this.refs.ztree.ztreeObj.getCheckedNodes());
+  }
+  handleCheck(event,treeId,treeNode){
     console.log(treeNode);
   }
 }
