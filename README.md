@@ -74,5 +74,5 @@ the zTree view setting
 
 please go [jQuery zTree](http://www.treejs.cn/v3/api.php) to get more infomations!
 
-#LICENSE
+# LICENSE
 MIT
