@@ -13,7 +13,7 @@ export default class ReactZtree extends Component{
     this.renderZtreeDom();
   }
   componentWillUnmount(){
-    this.ztreeObj.destroy();
+    this.ztreeObj && this.ztreeObj.destroy();
   }
   renderZtreeDom(){
     let ztreeObj = this.ztreeObj=$.fn.zTree.init(this.getTreeDom(),this.getTreeSetting(),this.props.nodes);

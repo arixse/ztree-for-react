@@ -15,10 +15,17 @@ const check={
   enable:true
 }
 export default class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      showTree:true
+    }
+  }
   render() {
+    const tree = this.state.showTree?(<ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree"/>):null
     return (
       <div>
-        <ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree"/>
+        {tree}
       </div>
     );
   }
@@ -34,5 +41,12 @@ export default class App extends Component {
   }
   handleCheck(event,treeId,treeNode){
     console.log(treeNode);
+  }
+  componentDidMount(){
+    setTimeout(()=>{
+      this.setState({
+        showTree:false
+      })
+    },2000)
   }
 }
