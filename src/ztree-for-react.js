@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import $ from 'jquery';
 import 'ztree';
 let ztreeIndex=0;
+let _ztree = (window||global).ztree = {};
 export default class ReactZtree extends Component{
   constructor(props){
     super(props);
@@ -17,6 +18,9 @@ export default class ReactZtree extends Component{
   }
   renderZtreeDom(){
     let ztreeObj = this.ztreeObj=$.fn.zTree.init(this.getTreeDom(),this.getTreeSetting(),this.props.nodes);
+    if(this.props.treeName && typeof this.props.treeName ==='string'){
+      _ztree[this.props.treeName] = ztreeObj;
+    }
     return ztreeObj;
   }
   getTreeDom(){

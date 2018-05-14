@@ -22,7 +22,12 @@ export default class App extends Component {
     }
   }
   render() {
-    const tree = this.state.showTree?(<ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree"/>):null
+    const tree = this.state.showTree?(
+      <div>
+      <ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree" treeName={'tree1'}/>
+      <ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree"/>
+      </div>
+    ):null
     return (
       <div>
         {tree}
@@ -43,10 +48,10 @@ export default class App extends Component {
     console.log(treeNode);
   }
   componentDidMount(){
-    setTimeout(()=>{
-      this.setState({
-        showTree:false
-      })
-    },2000)
+    // setTimeout(()=>{
+    //   this.setState({
+    //     showTree:false
+    //   })
+    // },2000)
   }
 }
