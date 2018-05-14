@@ -28,7 +28,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <ReactZtree nodes={nodes} events={this.getEvents()}/>
+          <ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree" treeName={'tree1'}/>
+          <ReactZtree nodes={nodes} events={this.getEvents()} check={check} ref="ztree"/>
       </div>
     );
   }
@@ -45,10 +46,24 @@ export default class App extends Component {
   handleCheck(event,treeId,treeNode){
     console.log(treeNode);
   }
+  componentDidMount(){
+    //you can add treeName prop to set this treeObj to the window 
+    console.log(window.ztree);
+    /**
+     * 
+     * {tree1: {…}}
+        tree1
+        :
+        {setting: {…}, addNodes: ƒ, cancelSelectedNode: ƒ, destroy: ƒ, expandAll: ƒ, …}
+        __proto__
+        :
+        Object
+     * /
+  }
 }
 ```
 
-# run example
+# quick start
 ```sh
 npm install
 
@@ -57,6 +72,8 @@ npm start
 open [http://127.0.0.1:3000](http//127.0.0.1:3000) in you browser
 
 # component props
+- **`treeName`** (string)
+the global attribute name  
 - **`nodes`** (required, object)
 the zTreee Nodes data
 - **`events`** (object)
