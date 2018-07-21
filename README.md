@@ -96,7 +96,7 @@ please go [jQuery zTree](http://www.treejs.cn/v3/api.php) to get more infomation
 # FAQ
 ## 1. jQuery is not defined?
 Please install expose-loader,and 
-add some config to your webpack config :smile
+add some config to your webpack config 😄
 ```js
 module: {
     loaders: [{
