@@ -10,10 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "hhttps://github.com/arixse/vue-ztree.git"
-  },
-  "bug":{
-    "url":"https://github.com/arixse/vue-ztree/issues"
+    "url": "https://github.com/arixse/ztree-for-react.git"
   },
   "main":"lib/ztree-for-react.js",
   "keywords": [
